@@ -8,38 +8,37 @@ import { SeedConfig } from './seed.config';
  * below.
  */
 export class ProjectConfig extends SeedConfig {
+    PROJECT_TASKS_DIR = join(process.cwd(), this.TOOLS_DIR, 'tasks', 'project');
 
-  PROJECT_TASKS_DIR = join(process.cwd(), this.TOOLS_DIR, 'tasks', 'project');
+    constructor() {
+        super();
+        // this.APP_TITLE = 'Put name of your app here';
+        // this.GOOGLE_ANALYTICS_ID = 'Your site's ID';
 
-  constructor() {
-    super();
-    // this.APP_TITLE = 'Put name of your app here';
-    // this.GOOGLE_ANALYTICS_ID = 'Your site's ID';
+        /* Enable typeless compiler runs (faster) between typed compiler runs. */
+        // this.TYPED_COMPILE_INTERVAL = 5;
 
-    /* Enable typeless compiler runs (faster) between typed compiler runs. */
-    // this.TYPED_COMPILE_INTERVAL = 5;
-
-    // Add `NPM` third-party libraries to be injected/bundled.
-    this.NPM_DEPENDENCIES = [
-      ...this.NPM_DEPENDENCIES,
-      // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
-      // {src: 'lodash/lodash.min.js', inject: 'libs'},
+        // Add `NPM` third-party libraries to be injected/bundled.
+        this.NPM_DEPENDENCIES = [
+            ...this.NPM_DEPENDENCIES,
+            {src: 'bootstrap/dist/js/bootstrap.min.js', inject: 'libs'},
+            {src: 'bootstrap/dist/css/bootstrap.min.css', inject: true}, // inject into css section
     ];
 
     // Add `local` third-party libraries to be injected/bundled.
     this.APP_ASSETS = [
-      // {src: `${this.APP_SRC}/your-path-to-lib/libs/jquery-ui.js`, inject: true, vendor: false}
-      // {src: `${this.CSS_SRC}/path-to-lib/test-lib.css`, inject: true, vendor: false},
+        // {src: `${this.APP_SRC}/your-path-to-lib/libs/jquery-ui.js`, inject: true, vendor: false}
+        // {src: `${this.CSS_SRC}/path-to-lib/test-lib.css`, inject: true, vendor: false},
     ];
 
     this.ROLLUP_INCLUDE_DIR = [
-      ...this.ROLLUP_INCLUDE_DIR,
-      //'node_modules/moment/**'
+        ...this.ROLLUP_INCLUDE_DIR,
+        //'node_modules/moment/**'
     ];
 
     this.ROLLUP_NAMED_EXPORTS = [
-      ...this.ROLLUP_NAMED_EXPORTS,
-      //{'node_modules/immutable/dist/immutable.js': [ 'Map' ]},
+        ...this.ROLLUP_NAMED_EXPORTS,
+        //{'node_modules/immutable/dist/immutable.js': [ 'Map' ]},
     ];
 
     // Add packages (e.g. ng2-translate)
@@ -59,5 +58,4 @@ export class ProjectConfig extends SeedConfig {
     /* Add to or override NPM module configurations: */
     // this.PLUGIN_CONFIGS['browser-sync'] = { ghostMode: false };
   }
-
 }
