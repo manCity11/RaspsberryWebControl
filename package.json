@@ -4,19 +4,6 @@
   "description": "Raspberry web control with angular (frontend)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manCity11/RaspsberryWebControl.git"
-  },
-  "author": "Inthalak Sirasa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/manCity11/RaspsberryWebControl/issues"
-  },
-  "homepage": "https://github.com/manCity11/RaspsberryWebControl#readme",
-  "scripts": {
     "build.dev": "gulp build.dev --color --env-config dev",
     "build.dev.watch": "gulp build.dev.watch --color",
     "build.e2e": "gulp build.e2e --color",
@@ -57,6 +44,16 @@
     "compodoc": "./node_modules/.bin/compodoc -p src/client/tsconfig.json",
     "serve.compodoc": "./node_modules/.bin/compodoc -s"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manCity11/RaspsberryWebControl.git"
+  },
+  "author": "Inthalak Sirasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manCity11/RaspsberryWebControl/issues"
+  },
+  "homepage": "https://github.com/manCity11/RaspsberryWebControl#readme",
   "devDependencies": {
     "@angular/compiler-cli": "^4.3.0",
     "@angular/platform-server": "^4.3.0",
