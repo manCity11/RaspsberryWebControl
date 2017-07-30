@@ -1,0 +1,33 @@
+.left {
+    float:left;
+    height:100vh;
+}
+
+.left {
+    background: #337ab7;
+    display: inline-block;
+    white-space: nowrap;
+    width: 50px;
+    transition: width 1s ;
+}
+
+.item:hover {
+    background-color:#ccc;
+}
+
+.item {
+    height:50px;
+    overflow:hidden;
+    color:#fff;
+}
+
+.glyphicon {
+    margin:15px;
+    width:20px;
+    color:#fff;
+}
+
+span.glyphicon.glyphicon-refresh{
+    font-size:17px;
+    vertical-align: middle !important;
+}

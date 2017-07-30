@@ -1,3 +1,11 @@
+:host /deep/ .left:hover {
+    width: 250px;
+}
+
+.page-content {
+    display: inline-block;
+}
+
 :host {
   flex: 1 1 100%;
   display: flex;
