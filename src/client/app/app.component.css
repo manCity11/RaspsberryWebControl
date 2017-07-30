@@ -1,5 +1,9 @@
-#wrapper:hover .right {
-    padding-left: 96%;
+:host /deep/ .left:hover {
+    width: 250px;
+}
+
+:host /deep/ .item:hover {
+    background-color:#ccc;
 }
 
 :host {
