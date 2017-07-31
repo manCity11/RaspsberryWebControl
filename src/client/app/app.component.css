@@ -13,8 +13,18 @@
     z-index: 1;
 }
 
+.page-content p {
+    margin-left: 10px;
+}
+
 :host {
   flex: 1 1 100%;
   display: flex;
   flex-flow: column;
+}
+
+@media screen and (max-width: 1280px) {
+    .page-content {
+        width: 1230px;
+    }
 }
