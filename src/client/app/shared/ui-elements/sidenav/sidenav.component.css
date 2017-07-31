@@ -1,6 +1,9 @@
 .left {
     float:left;
     height:100vh;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
 }
 
 .left {
