@@ -8,13 +8,8 @@
 
 .page-content {
     position: absolute;
-    background-color: red;
     left: 50px;
     z-index: 1;
-}
-
-.page-content p {
-    margin-left: 10px;
 }
 
 :host {
